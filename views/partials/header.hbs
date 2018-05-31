@@ -1,3 +1,7 @@
 <header>
-  <p>{{theme}}</p>
+  <ul>
+    {{#each headerStructure}}
+      <li><a href={{this.link}}>{{this.text}}</a></li>
+    {{/each}}
+  </ul>
 </header>
